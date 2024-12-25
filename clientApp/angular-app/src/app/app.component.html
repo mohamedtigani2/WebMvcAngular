@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Welcome to Our Services</h1>
+    <div class="button-group">
+        <button (click)="showContent('floria')" [class.active]="currentView === 'floria'">
+            After Sale Service
+        </button>
+        <button (click)="showContent('sales')" [class.active]="currentView === 'sales'">
+            Sales
+        </button>
+    </div>
+
+    <div class="content">
+        <div *ngIf="currentView === 'floria'">
+            <h2>After Sale Service</h2>
+            <p>We provide top-notch after-sale support to ensure customer satisfaction. Contact our team for assistance with your product.</p>
+        </div>
+        <div *ngIf="currentView === 'sales'">
+            <h2>Sales</h2>
+            <p>Explore our latest products and offers. Our sales team is here to help you with your purchase decisions.</p>
+        </div>   <!---->
+        @if (currentView === 'sales') {
+        <div>
+          Sales view content here
+        </div>
+        }
+    </div>
+</div>
+  <router-outlet />
+ 

@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+  .button-group button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+    .button-group button:hover {
+      background-color: #45a049;
+    }
+
+    .button-group button.active {
+      background-color: #2e7031;
+      font-weight: bold;
+    }
+
+.content {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+  .content h2 {
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    margin-top: 0;
+  }
